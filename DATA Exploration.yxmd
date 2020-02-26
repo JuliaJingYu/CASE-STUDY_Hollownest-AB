@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\YUJI6004\master_database.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>master_database.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="USERID" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="GENDER" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="DOB" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="COUNTRY" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="EDUCATION" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="HOBBY" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="YEAR" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="WEBBROWSER" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="PPC_ADD" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="ITEM" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="PURCHASE" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="DISCOUNT" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="PAYMENT" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="WAREHOUSE" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="SHIPDAYS" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="DELIVERYDATE" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="REVIEW" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="RATING" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="TRACKNO" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="TIMESTAMP" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="DELIVERY YEAR" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="DELIVERY MONTH" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="TIMESTAMP HOUR" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="CATEGORY" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="COLOR" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="PURCHASEPRICE" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+            <Field name="SALEPRICE" size="254" source="File: C:\Users\YUJI6004\master_database.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="USERID" selected="True" type="Int64" size="8" />
+            <SelectField field="GENDER" selected="True" />
+            <SelectField field="DOB" selected="True" type="Date" size="10" />
+            <SelectField field="COUNTRY" selected="True" />
+            <SelectField field="EDUCATION" selected="True" />
+            <SelectField field="HOBBY" selected="True" />
+            <SelectField field="YEAR" selected="True" type="Int32" size="4" />
+            <SelectField field="WEBBROWSER" selected="True" />
+            <SelectField field="PPC_ADD" selected="True" />
+            <SelectField field="ITEM" selected="True" type="Int64" size="8" />
+            <SelectField field="PURCHASE" selected="True" />
+            <SelectField field="DISCOUNT" selected="True" />
+            <SelectField field="PAYMENT" selected="True" />
+            <SelectField field="WAREHOUSE" selected="False" type="Int32" size="4" />
+            <SelectField field="SHIPDAYS" selected="True" type="Int32" size="4" />
+            <SelectField field="DELIVERYDATE" selected="False" type="String" size="254" />
+            <SelectField field="REVIEW" selected="True" type="String" size="254" />
+            <SelectField field="RATING" selected="True" type="Int32" size="4" />
+            <SelectField field="TRACKNO" selected="False" type="Int32" size="4" />
+            <SelectField field="TIMESTAMP" selected="True" type="V_WString" size="254" />
+            <SelectField field="DELIVERY YEAR" selected="True" type="Int32" size="4" />
+            <SelectField field="DELIVERY MONTH" selected="True" type="String" size="254" />
+            <SelectField field="TIMESTAMP HOUR" selected="True" type="String" size="254" />
+            <SelectField field="CATEGORY" selected="True" />
+            <SelectField field="COLOR" selected="True" type="String" size="254" />
+            <SelectField field="PURCHASEPRICE" selected="True" type="Double" size="8" />
+            <SelectField field="SALEPRICE" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="270" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\YUJI6004\AppData\Local\Temp\Engine_4412_a5e9c550e54645b58bae5248b1372e3a_\Engine_5720_f74c4a2fef68415394e093d308cee662_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="282" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="FrequencyFields">&lt;Field field="GENDER" selected="True" /&gt;&lt;Field field="EDUCATION" selected="True" /&gt;&lt;Field field="HOBBY" selected="True" /&gt;&lt;Field field="YEAR" selected="True" /&gt;&lt;Field field="WEBBROWSER" selected="True" /&gt;&lt;Field field="PPC_ADD" selected="True" /&gt;&lt;Field field="ITEM" selected="True" /&gt;&lt;Field field="DELIVERY MONTH" selected="True" /&gt;&lt;Field field="TIMESTAMP HOUR" selected="True" /&gt;&lt;Field field="CATEGORY" selected="True" /&gt;&lt;Field field="COLOR" selected="True" /&gt;&lt;Field field="*Unknown" selected="False" /&gt;</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Frequency.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\YUJI6004\AppData\Local\Temp\Engine_4412_a5e9c550e54645b58bae5248b1372e3a_\Engine_5720_61b2ba24da9d4b588ef773c66704ba37_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Report" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Interactive" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Data" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DATA Exploration</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
